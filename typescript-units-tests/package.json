@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "jasmine --config=jasmine.json",
+    "coverage": "nyc npm test"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^4.3.0",
+    "jasmine": "^4.4.0",
+    "nyc": "^15.1.0",
+    "typescript": "^4.8.2"
+  }
+}
