@@ -36,6 +36,7 @@ describe('genererAlea function', () => {
   it('should return random value', () => {
     spyOn(Math, 'random').and.returnValue(0.4);
     expect(genererAlea(0, 10)).toBe(4);
+    expect(genererAlea(10, 20)).toBe(14);
   });
   it('should call Math.random normally', () => {
     expect(Math.random()).not.toBe(0.4);

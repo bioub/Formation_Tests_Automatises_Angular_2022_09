@@ -20,7 +20,7 @@ describe('timeout1s function', () => {
   //   timeout1s(spy);
   // });
   it('should call callback', () => {
-    jasmine.clock().install();
+    jasmine.clock().install(); // remplace les fonctions de temps par des fonctions synchrones (setTimeout..)
     const spy = jasmine.createSpy();
     timeout1s(spy); // appel du setTimeout défini par jasmine.clock().install();
 

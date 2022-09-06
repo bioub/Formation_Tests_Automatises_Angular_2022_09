@@ -18,7 +18,7 @@ describe('timeoutPromise function', () => {
       .then(() => {
         expect(spy).toHaveBeenCalled();
       });
-
+     
     jasmine.clock().tick(1000);
     jasmine.clock().uninstall();
     return promise;

@@ -18,10 +18,10 @@ describe('forEach method', () => {
 
     ['A', 'B', 'C'].forEach(spy);
 
-    expect(spy).toHaveBeenCalled();
     expect(spy).toHaveBeenCalledTimes(3);
     expect(spy).toHaveBeenCalledWith('A', 0, ['A', 'B', 'C']);
     expect(spy).toHaveBeenCalledWith('B', 1, ['A', 'B', 'C']);
+    expect(spy).toHaveBeenCalledWith('C', 2, ['A', 'B', 'C']);
     // expect(spy.calls.count()).toBe(3);
     // expect(spy.calls.first().args).toEqual(['A', 0, ['A', 'B', 'C']]);
   });
