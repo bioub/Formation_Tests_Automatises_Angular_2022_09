@@ -1,6 +1,8 @@
+import { HttpClientModule } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { DoHttpRequestComponent } from './do-http-request/do-http-request.component';
 import { SharedModule } from './shared/shared.module';
 
 // TODO replace with
@@ -17,9 +19,11 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule,
         SharedModule,
+        HttpClientModule,
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        DoHttpRequestComponent,
       ],
       // errorOnUnknownElements: true,
       // errorOnUnknownProperties: true,

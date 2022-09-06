@@ -51,7 +51,7 @@ describe('CounterComponent', () => {
     // })
     // buttonEl.dispatchEvent(new Event('tripleclick'));
     const buttonEl = nativeElement.querySelector('button');
-    buttonEl?.dispatchEvent(new MouseEvent('click'));
+    buttonEl?.dispatchEvent(new MouseEvent('click')); // ou component.handleIncrement()
 
     fixture.detectChanges(); // déclenche la détection de
     // changement (pas ngZone dans les tests)
