@@ -37,4 +37,9 @@ describe('UsersListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // En utilisant HttpClientTestingModule
+  // tester que ce composant affiche les users
+  // que vous paramétrez dans le test
+  // [{id: 1, name: 'Toto'}, {id: 2, name: 'Titi'}]
 });
